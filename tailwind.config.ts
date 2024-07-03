@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "hero": "url('/images/hero.webp')",
+      },
       colors: {
         unit: {
           black: {

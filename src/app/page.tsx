@@ -1,9 +1,11 @@
 import Layout from "@/components/layouts/Layout";
 
+import Hero from "./components/Hero";
+
 export default function Home() {
   return (
     <Layout>
-      <section>Hello world!</section>
+      <Hero />
     </Layout>
   );
 }

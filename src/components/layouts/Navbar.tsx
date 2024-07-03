@@ -2,7 +2,10 @@
 import unitCreativeIcon from "@public/images/unit-creative-icon.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
+
+import { cn } from "@/lib/utils";
 
 import { useIndexRefStore } from "@/store/useIndexRefStore";
 
@@ -11,9 +14,31 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 function Navbar() {
   const { aboutUsRef, servicesRef, contactUsRef } = useIndexRefStore();
 
+  const [isScrolled, setIsScrolled] = useState(true);
+  const checkScroll = () => {
+    if (window.scrollY >= 10) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener("scroll", checkScroll);
+    return () => {
+      window.removeEventListener("scroll", checkScroll);
+    };
+  }, []);
+
   return (
     <Sheet>
-      <nav className="fixed left-0 top-0 z-[60] w-screen font-poppins">
+      <nav
+        className={cn(
+          "fixed left-0 top-0 z-[60] w-screen font-poppins",
+          isScrolled && "bg-white/10 backdrop-blur-md",
+        )}
+      >
         <div className="mx-auto flex w-full max-w-screen-2xl items-center gap-x-8 px-8 py-6 transition-all sm:px-16">
           <div className="mr-auto flex items-center gap-x-3">
             <Link href="/" className="relative size-8">
@@ -75,7 +100,7 @@ function Navbar() {
           </SheetTrigger>
         </div>
       </nav>
-      <SheetContent className="z-[60] w-full border-0 bg-white text-unit-black-100 p-8">
+      <SheetContent className="z-[60] w-full border-0 bg-white p-8 text-unit-black-100">
         <ul className="mt-12 flex flex-col items-start justify-start gap-y-6 font-poppins text-xl">
           <li>
             <SheetClose>
