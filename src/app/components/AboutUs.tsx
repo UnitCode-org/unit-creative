@@ -23,7 +23,7 @@ const AboutUs = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         className={cn(
-          "relative mb-24 flex w-full flex-col px-8 sm:px-16",
+          "relative mb-24 flex w-full flex-col px-8 sm:px-16 max-w-screen-2xl",
           className,
         )}
         ref={aboutUsRef}

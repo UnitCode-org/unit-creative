@@ -20,6 +20,7 @@ const config = {
     extend: {
       backgroundImage: {
         "hero": "url('/images/hero.webp')",
+        'unit-network': 'url("/images/unit-network-bg.webp")',
       },
       colors: {
         unit: {
