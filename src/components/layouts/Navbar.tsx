@@ -60,7 +60,7 @@ function Navbar() {
                 if (aboutUsRef && aboutUsRef.current) {
                   const top =
                     aboutUsRef.current.getBoundingClientRect().top +
-                    window.scrollY;
+                    window.scrollY - 100;
                   window.scrollTo({ top, behavior: "smooth" });
                 }
               }}
@@ -73,7 +73,7 @@ function Navbar() {
                 if (servicesRef && servicesRef.current) {
                   const top =
                     servicesRef.current.getBoundingClientRect().top +
-                    window.scrollY;
+                    window.scrollY - 100;
                   window.scrollTo({ top, behavior: "smooth" });
                 }
               }}
@@ -86,7 +86,7 @@ function Navbar() {
                 if (contactUsRef && contactUsRef.current) {
                   const top =
                     contactUsRef.current.getBoundingClientRect().top +
-                    window.scrollY;
+                    window.scrollY - 100;
                   window.scrollTo({ top, behavior: "smooth" });
                 }
               }}
@@ -109,7 +109,7 @@ function Navbar() {
                   if (aboutUsRef && aboutUsRef.current) {
                     const top =
                       aboutUsRef.current.getBoundingClientRect().top +
-                      window.scrollY;
+                      window.scrollY - 100;
                     window.scrollTo({ top, behavior: "smooth" });
                   }
                 }}
@@ -125,7 +125,7 @@ function Navbar() {
                   if (servicesRef && servicesRef.current) {
                     const top =
                       servicesRef.current.getBoundingClientRect().top +
-                      window.scrollY;
+                      window.scrollY - 100;
                     window.scrollTo({ top, behavior: "smooth" });
                   }
                 }}
@@ -141,7 +141,7 @@ function Navbar() {
                   if (contactUsRef && contactUsRef.current) {
                     const top =
                       contactUsRef.current.getBoundingClientRect().top +
-                      window.scrollY;
+                      window.scrollY - 100;
                     window.scrollTo({ top, behavior: "smooth" });
                   }
                 }}

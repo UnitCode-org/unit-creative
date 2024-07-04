@@ -18,7 +18,7 @@ const Hero = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         className={cn(
-          "bg-hero lg:pt- flex w-full max-w-screen-2xl flex-col-reverse overflow-hidden bg-center bg-no-repeat px-8 pb-12 pt-32 sm:px-16 sm:pt-36 lg:min-h-screen lg:pb-0",
+          "bg-hero flex w-full max-w-screen-2xl flex-col-reverse overflow-hidden bg-center bg-no-repeat px-8 pb-12 pt-32 sm:px-16 sm:pt-36 lg:min-h-screen lg:pb-0 mb-24",
           className,
         )}
         ref={ref}
@@ -35,7 +35,7 @@ const Hero = forwardRef<HTMLDivElement, Props>(
               if (aboutUsRef && aboutUsRef.current) {
                 const top =
                   aboutUsRef.current.getBoundingClientRect().top +
-                  window.scrollY;
+                  window.scrollY - 100;
                 window.scrollTo({ top, behavior: "smooth" });
               }
             }}
