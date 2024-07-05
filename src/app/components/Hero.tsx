@@ -25,7 +25,7 @@ const Hero = forwardRef<HTMLDivElement, Props>(
         {...props}
       >
         <div className="flex flex-col lg:flex-row items-center justify-between gap-y-12">
-          <p className="lg:w-96 text-lg text-center lg:text-left">
+          <p className="lg:w-96 text-sm sm:text-lg text-center lg:text-left">
             We are a collective of passionate designers & developers committed
             to bringing your branding vision to life with unforgettable designs.
           </p>
@@ -43,7 +43,7 @@ const Hero = forwardRef<HTMLDivElement, Props>(
             Start your journey
           </Button>
         </div>
-        <div className="z-20 grow lg:my-auto flex flex-col lg:flex-row items-center justify-between font-poppins text-6xl bg-hero bg-no-repeat bg-center lg:bg-none">
+        <div className="z-20 grow lg:my-auto flex flex-col lg:flex-row items-center justify-between font-poppins text-2xl sm:text-6xl bg-hero bg-no-repeat bg-center bg-contain text-center lg:bg-none">
           <p>Where Vision</p>
           <p>Meets Reality</p>
         </div>

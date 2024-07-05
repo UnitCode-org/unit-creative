@@ -55,7 +55,7 @@ const Services = forwardRef<HTMLDivElement, Props>(
                 quality={100}
               />
             </div>
-            <h4 className="text-lg text-unit-black-100">
+            <h4 className="text-xs sm:text-lg text-unit-black-100">
               We provide a<br />
               comprehensive range of services for those looking to tokenize
               their assets on the Unit Network platform.
@@ -72,7 +72,7 @@ const Services = forwardRef<HTMLDivElement, Props>(
                 quality={100}
               />
             </div>
-            <h4 className="text-lg text-unit-black-100">
+            <h4 className="text-xs sm:text-lg text-unit-black-100">
               Whether you need a complete brand design, or specific brand
               resources, our tailored solutions are crafted to meet your unique
               needs.
@@ -89,7 +89,7 @@ const Services = forwardRef<HTMLDivElement, Props>(
                 quality={100}
               />
             </div>
-            <h4 className="text-lg text-unit-black-100">
+            <h4 className="text-xs sm:text-lg text-unit-black-100">
               We aim to ensure your brand stands out and help you make a lasting
               impression.
             </h4>

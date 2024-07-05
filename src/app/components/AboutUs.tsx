@@ -33,10 +33,10 @@ const AboutUs = forwardRef<HTMLDivElement, Props>(
           <div className="size-4 rounded-[4px] bg-unit-black-100" />
           <span className="text-lg">About Us</span>
         </div>
-        <h3 className="mb-6 max-w-lg text-[56px] leading-tight">
+        <h3 className="mb-20 sm:mb-6 max-w-lg text-[32px] sm:text-[56px] leading-tight">
           Innovating the future, one design at a time
         </h3>
-        <div className="lg:ml-auto flex gap-x-6">
+        <div className="lg:ml-auto grid grid-cols-2 gap-x-6">
           <div className="flex max-w-96 flex-col gap-y-6">
             <div className="relative size-20">
               <Image
@@ -48,7 +48,7 @@ const AboutUs = forwardRef<HTMLDivElement, Props>(
                 quality={100}
               />
             </div>
-            <p className="text-lg">
+            <p className="text-xs sm:text-lg">
               At Unit Creative Studios, we are a collective of visionary
               designers and developers from all around the world dedicated to
               revolutionizing how brands connect with their audiences.
@@ -65,7 +65,7 @@ const AboutUs = forwardRef<HTMLDivElement, Props>(
                 quality={100}
               />
             </div>
-            <p className="text-lg">
+            <p className="text-xs sm:text-lg">
               From the initial spark of an idea to the final design, we
               collaborate closely with our clients to ensure every project
               reflects their vision and values. Once we understand what drives

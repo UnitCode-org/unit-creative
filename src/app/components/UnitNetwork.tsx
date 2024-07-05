@@ -25,12 +25,12 @@ const UnitNetwork = forwardRef<HTMLDivElement, Props>(
           <span className="text-lg">Unit Network</span>
         </div>
         <div className="flex flex-col-reverse lg:flex-col gap-y-6 lg:gap-y-8">
-          <Link href='https://unit.network' className="flex h-72 w-full items-center justify-center gap-x-2 rounded-2xl transition-all group hover:bg-unit-black-100 hover:text-white relative duration-500 !opacity-100">
+          <Link href='https://unit.network' className="flex h-32 sm:h-72 w-full items-center justify-center gap-x-2 rounded-2xl transition-all group hover:bg-unit-black-100 hover:text-white relative duration-500 !opacity-100">
             <div className="bg-unit-network-vertical lg:bg-unit-network absolute h-full w-full bg-cover bg-fixed bg-center bg-no-repeat group-hover:opacity-0 rounded-xl transition-all duration-500" />
-            <div className="text-4xl z-10">
+            <div className="text-base sm:text-4xl z-10">
               Explore <span className="font-semibold">Unit Network</span>
             </div>{" "}
-            <ArrowRightIcon className="z-10 size-8"/>
+            <ArrowRightIcon className="z-10 size-6 sm:size-8"/>
           </Link>
           <div className="flex flex-col lg:flex-row justify-between font-poppins gap-y-4">
             <div className="text-2xl">Our greatest project yet</div>
