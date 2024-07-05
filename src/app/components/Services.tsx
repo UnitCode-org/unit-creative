@@ -33,8 +33,8 @@ const Services = forwardRef<HTMLDivElement, Props>(
           <div className="size-4 rounded-[4px] bg-unit-black-100" />
           <span className="text-lg">Our Services</span>
         </div>
-        <div className="flex gap-x-6">
-          <div className="group flex h-[342px] w-full transition-all flex-col rounded-2xl border border-unit-black-100 bg-unit-black-100 p-6 hover:bg-white 2xl:h-96">
+        <div className="flex flex-col lg:flex-row gap-6">
+          <div className="group flex h-40 lg:h-[342px] w-full transition-all flex-col rounded-2xl border border-unit-black-100 bg-unit-black-100 p-6 hover:bg-white 2xl:h-96">
             <h4 className="mt-auto text-3xl text-white group-hover:hidden">
               What
               <br />
@@ -44,8 +44,8 @@ const Services = forwardRef<HTMLDivElement, Props>(
               Tailored solutions for every vision.
             </h4>
           </div>
-          <div className="flex h-[342px] w-full flex-col items-end justify-between rounded-2xl border border-unit-black-100 bg-white p-6 2xl:h-96">
-            <div className="relative size-12">
+          <div className="flex h-40 lg:h-[342px] w-full flex-col items-end justify-between rounded-2xl border border-unit-black-100 bg-white p-6 2xl:h-96">
+            <div className="relative size-8 min-w-8 min-h-8 lg:size-12 lg:min-w-12 lg:min-h-12">
               <Image
                 src="/images/donut-2d.svg"
                 alt="Donut Icon"
@@ -61,8 +61,8 @@ const Services = forwardRef<HTMLDivElement, Props>(
               their assets on the Unit Network platform.
             </h4>
           </div>
-          <div className="flex h-[342px] w-full flex-col items-end justify-between rounded-2xl border border-unit-black-100 bg-white p-6 2xl:h-96">
-            <div className="relative size-12">
+          <div className="flex h-40 lg:h-[342px] w-full flex-col items-end justify-between rounded-2xl border border-unit-black-100 bg-white p-6 2xl:h-96">
+            <div className="relative size-8 min-w-8 min-h-8 lg:size-12 lg:min-w-12 lg:min-h-12">
               <Image
                 src="/images/lightning-2d.svg"
                 alt="Donut Icon"
@@ -78,8 +78,8 @@ const Services = forwardRef<HTMLDivElement, Props>(
               needs.
             </h4>
           </div>
-          <div className="flex h-[342px] w-full flex-col items-end justify-between rounded-2xl border border-unit-black-100 bg-white p-6 2xl:h-96">
-            <div className="relative size-12">
+          <div className="flex h-40 lg:h-[342px] w-full flex-col items-end justify-between rounded-2xl border border-unit-black-100 bg-white p-6 2xl:h-96">
+            <div className="relative size-8 min-w-8 min-h-8 lg:size-12 lg:min-w-12 lg:min-h-12">
               <Image
                 src="/images/star-2d.svg"
                 alt="Donut Icon"

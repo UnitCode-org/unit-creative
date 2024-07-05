@@ -36,7 +36,7 @@ const AboutUs = forwardRef<HTMLDivElement, Props>(
         <h3 className="mb-6 max-w-lg text-[56px] leading-tight">
           Innovating the future, one design at a time
         </h3>
-        <div className="ml-auto flex gap-x-6">
+        <div className="lg:ml-auto flex gap-x-6">
           <div className="flex max-w-96 flex-col gap-y-6">
             <div className="relative size-20">
               <Image
