@@ -29,7 +29,7 @@ const Services = forwardRef<HTMLDivElement, Props>(
         ref={servicesRef}
         {...props}
       >
-        <div className="mb-16 flex items-center gap-x-2">
+        <div className="mb-6 lg:mb-16 flex items-center gap-x-2">
           <div className="size-4 rounded-[4px] bg-unit-black-100" />
           <span className="text-lg">Our Services</span>
         </div>

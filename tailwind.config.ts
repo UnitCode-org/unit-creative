@@ -21,6 +21,7 @@ const config = {
       backgroundImage: {
         "hero": "url('/images/hero.webp')",
         'unit-network': 'url("/images/unit-network-bg.webp")',
+        'unit-network-vertical': 'url("/images/unit-network-bg-vertical.webp")',
       },
       colors: {
         unit: {
