@@ -38,6 +38,7 @@ function Navbar() {
           "fixed left-0 top-0 z-[60] w-screen font-poppins",
           isScrolled && "bg-white/10 backdrop-blur-md",
         )}
+        style={{ WebkitBackdropFilter: isScrolled ? "blur(12px)" : "none"}}
       >
         <div className="mx-auto flex w-full max-w-screen-2xl items-center gap-x-8 px-8 py-6 transition-all sm:px-16">
           <div className="mr-auto flex items-center gap-x-3">
@@ -60,7 +61,8 @@ function Navbar() {
                 if (aboutUsRef && aboutUsRef.current) {
                   const top =
                     aboutUsRef.current.getBoundingClientRect().top +
-                    window.scrollY - 100;
+                    window.scrollY -
+                    100;
                   window.scrollTo({ top, behavior: "smooth" });
                 }
               }}
@@ -73,7 +75,8 @@ function Navbar() {
                 if (servicesRef && servicesRef.current) {
                   const top =
                     servicesRef.current.getBoundingClientRect().top +
-                    window.scrollY - 100;
+                    window.scrollY -
+                    100;
                   window.scrollTo({ top, behavior: "smooth" });
                 }
               }}
@@ -86,7 +89,8 @@ function Navbar() {
                 if (contactUsRef && contactUsRef.current) {
                   const top =
                     contactUsRef.current.getBoundingClientRect().top +
-                    window.scrollY - 100;
+                    window.scrollY -
+                    100;
                   window.scrollTo({ top, behavior: "smooth" });
                 }
               }}
@@ -109,7 +113,8 @@ function Navbar() {
                   if (aboutUsRef && aboutUsRef.current) {
                     const top =
                       aboutUsRef.current.getBoundingClientRect().top +
-                      window.scrollY - 100;
+                      window.scrollY -
+                      100;
                     window.scrollTo({ top, behavior: "smooth" });
                   }
                 }}
@@ -125,7 +130,8 @@ function Navbar() {
                   if (servicesRef && servicesRef.current) {
                     const top =
                       servicesRef.current.getBoundingClientRect().top +
-                      window.scrollY - 100;
+                      window.scrollY -
+                      100;
                     window.scrollTo({ top, behavior: "smooth" });
                   }
                 }}
@@ -141,7 +147,8 @@ function Navbar() {
                   if (contactUsRef && contactUsRef.current) {
                     const top =
                       contactUsRef.current.getBoundingClientRect().top +
-                      window.scrollY - 100;
+                      window.scrollY -
+                      100;
                     window.scrollTo({ top, behavior: "smooth" });
                   }
                 }}
