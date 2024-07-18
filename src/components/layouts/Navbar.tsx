@@ -38,7 +38,7 @@ function Navbar() {
           "fixed left-0 top-0 z-[60] w-screen font-poppins",
           isScrolled && "bg-white/10 backdrop-blur-md",
         )}
-        style={{ WebkitBackdropFilter: isScrolled ? "blur(12px)" : "none"}}
+        style={{ WebkitBackdropFilter: isScrolled ? "blur(12px)" : "none" }}
       >
         <div className="mx-auto flex w-full max-w-screen-2xl items-center gap-x-8 px-8 py-6 transition-all sm:px-16">
           <div className="mr-auto flex items-center gap-x-3">
@@ -97,7 +97,6 @@ function Navbar() {
             >
               Contact Us
             </div>
-            <Link href="https://www.unit.network/">Unit Network</Link>
           </div>
           <SheetTrigger className="md:hidden">
             <IoMenu className="block size-8 md:hidden" />
@@ -156,9 +155,6 @@ function Navbar() {
                 Contact Us
               </div>
             </SheetClose>
-          </li>
-          <li>
-            <Link href="https://www.unit.network/">Unit Network</Link>
           </li>
         </ul>
       </SheetContent>

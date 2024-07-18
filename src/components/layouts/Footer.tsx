@@ -12,28 +12,31 @@ function Footer() {
     <footer className="grid w-full max-w-screen-2xl grid-cols-2 justify-between px-8 py-8 text-unit-black-100 sm:px-16 sm:py-32">
       <div className="flex flex-col gap-y-6 sm:gap-y-7">
         <h2 className="text-lg sm:text-xl">Unit Creative</h2>
-        <div className="grid grid-cols-3 items-center gap-2 sm:flex w-fit">
+        <div className="grid w-fit grid-cols-3 items-center gap-2 sm:flex">
           <Link
+            target="_blank"
             href="https://www.instagram.com/unit.network"
-            className="size-10 sm:size-8 rounded-full bg-unit-black-100 p-1 text-white flex items-center justify-center"
+            className="flex size-10 items-center justify-center rounded-full bg-unit-black-100 p-1 text-white sm:size-8"
           >
-            <FaInstagram className="size-6"/>
+            <FaInstagram className="size-6" />
           </Link>
-          <Link href="https://t.me/unitfoundation">
+          <Link target="_blank" href="https://t.me/unitfoundation">
             <FaTelegram className="size-10 sm:size-8" />
           </Link>
-          <Link href="https://www.facebook.com/theunitnetwork">
+          <Link target="_blank" href="https://www.facebook.com/theunitnetwork">
             <FaFacebook className="size-10 sm:size-8" />
           </Link>
           <Link
+            target="_blank"
             href="https://twitter.com/theunitnetwork"
-            className="size-10 sm:size-8 rounded-full bg-unit-black-100 p-1 text-white flex items-center justify-center"
+            className="flex size-10 items-center justify-center rounded-full bg-unit-black-100 p-1 text-white sm:size-8"
           >
             <FaXTwitter className="size-6" />
           </Link>
           <Link
+            target="_blank"
             href="https://www.linkedin.com/company/theunitnetwork/"
-            className="size-10 sm:size-8 rounded-full bg-unit-black-100 p-1 text-white flex items-center justify-center"
+            className="flex size-10 items-center justify-center rounded-full bg-unit-black-100 p-1 text-white sm:size-8"
           >
             <FaLinkedinIn className="size-6" />
           </Link>

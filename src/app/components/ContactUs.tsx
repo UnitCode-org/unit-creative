@@ -31,43 +31,51 @@ const ContactUs = forwardRef<HTMLDivElement, Props>(
     return (
       <section
         className={cn(
-          "relative mb-24 flex sm:h-[530px] w-full max-w-screen-2xl flex-col px-8 sm:px-16",
+          "relative mb-24 flex w-full max-w-screen-2xl flex-col px-8 sm:h-[530px] sm:px-16",
           className,
         )}
         ref={contactUsRef}
         {...props}
       >
-        <div className="mb-6 lg:mb-16 flex items-center gap-x-2">
+        <div className="mb-6 flex items-center gap-x-2 lg:mb-16">
           <div className="size-4 rounded-[4px] bg-unit-black-100" />
           <span className="text-lg">Contact Us</span>
         </div>
         <div className="relative m-auto flex max-w-lg flex-col items-center justify-center gap-y-12">
-          <h3 className="text-[36px] sm:text-[56px] z-10 text-center sm:text-left">Want to get in touch?</h3>
-          <div className="flex w-full flex-col gap-y-8 sm:gap-y-4 z-10">
+          <h3 className="z-10 text-center text-[36px] sm:text-left sm:text-[56px]">
+            Want to get in touch?
+          </h3>
+          <div className="z-10 flex w-full flex-col gap-y-8 sm:gap-y-4">
             <div className="w-full border-b border-unit-black-100 pb-4 text-xs sm:text-lg">
               Send a message, and we’ll get back to you
             </div>
-            <div className="grid w-fit grid-cols-3 items-center gap-2 sm:flex mx-auto sm:mx-0">
+            <div className="mx-auto grid w-fit grid-cols-3 items-center gap-2 sm:mx-0 sm:flex">
               <Link
                 href="https://www.instagram.com/unit.network"
+                target="_blank"
                 className="flex size-14 items-center justify-center rounded-full bg-unit-black-100 p-1 text-white sm:size-8"
               >
                 <FaInstagram className="size-9 sm:size-6" />
               </Link>
-              <Link href="https://t.me/unitfoundation">
+              <Link href="https://t.me/unitfoundation" target="_blank">
                 <FaTelegram className="size-14 sm:size-8" />
               </Link>
-              <Link href="https://www.facebook.com/theunitnetwork">
+              <Link
+                href="https://www.facebook.com/theunitnetwork"
+                target="_blank"
+              >
                 <FaFacebook className="size-14 sm:size-8" />
               </Link>
               <Link
                 href="https://twitter.com/theunitnetwork"
+                target="_blank"
                 className="flex size-14 items-center justify-center rounded-full bg-unit-black-100 p-1 text-white sm:size-8"
               >
                 <FaXTwitter className="size-9 sm:size-6" />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/theunitnetwork/"
+                target="_blank"
                 className="flex size-14 items-center justify-center rounded-full bg-unit-black-100 p-1 text-white sm:size-8"
               >
                 <FaLinkedinIn className="size-9 sm:size-6" />
@@ -82,7 +90,7 @@ const ContactUs = forwardRef<HTMLDivElement, Props>(
             width={0}
             height={0}
             sizes="100vw"
-            className="hidden sm:block absolute w-1/2 -top-24 -right-44"
+            className="absolute -right-44 -top-24 hidden w-1/2 sm:block"
           />
           <Image
             src="/images/arrow-3d.webp"
@@ -92,7 +100,7 @@ const ContactUs = forwardRef<HTMLDivElement, Props>(
             width={0}
             height={0}
             sizes="100vw"
-            className="hidden sm:block absolute w-1/2 -bottom-24 -left-56"
+            className="absolute -bottom-24 -left-56 hidden w-1/2 sm:block"
           />
         </div>
       </section>
